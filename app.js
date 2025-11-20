@@ -10,7 +10,11 @@ var animals = {
     "frog": "croak",
     "lion": "roar",
     "bird": "tweet"
-}
+};
+
+// Busca el array de animales y añade uno nuevo
+animals['Pato'] = 'Cuac';
+
 
 function getAnimal() {
   return animal = _.sample(Object.entries(animals));
@@ -41,3 +45,4 @@ app.get('/api', function(req, res){
 module.exports =  app.listen(port, () => {
   console.log(`Launching server on http://localhost:${ port }`)
 });
+
